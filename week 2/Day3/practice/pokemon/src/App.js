@@ -1,31 +1,11 @@
 import './App.css';
-function App() {
+import React from 'react';
+import pokemon from './components/pokemon';
+const App = ()=> {
     return (
-      <div className="App">
+      <div>
         <Pokemon />
       </div>
     );
   }
-
-è
-const pokemon = () => {
-
-  const fetchPokemon = () => {
-    const p  = fetch("https://pokeapi.co/api/v2/pokemon") 
-    .then((res) => {
-        console.log(res)
-
-      }).then((pok)=>{
-        console.log(pok)
-      }).catch(err => {
-        console.log(err);
-      })
-    }
-  return (
-    <div>
-      <button onClick={(e)=>fetchPokemon()}>Ftech Pokemon</button>
-    </div>
-  )
-}
-
 export default pokemon;

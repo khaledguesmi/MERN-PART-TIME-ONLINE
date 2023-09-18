@@ -5,10 +5,9 @@ const Products = require("../models/product.model.js")
 module.exports.createProduct = (req,res) =>{
     Products.create(req.body).then(newProduct=>{
           console.log("New Product", newProduct)
-          res.json(newProduct)
+          res.status(200).json(newProduct)
       }).catch(err=>{
-          console.log(err)
-          res.json({error:err})
+          res.status(400).json(err)
       })
   }
 

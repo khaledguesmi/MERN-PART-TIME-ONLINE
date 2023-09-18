@@ -1,15 +1,23 @@
-import React from 'react'
+import React, { useState } from 'react'
 import ShowAllProduct from './ShowAllProduct'
 import CreateProduct from './CreateProduct'
 
 
 const HomePage = () => {
+
+  const [refrechState, setRefrechState] = useState(false)
+
+    const refresh = () => {
+        setRefrechState(!refrechState)
+    }
+
   return (
     <div>
 
-        <CreateProduct/>
+        <CreateProduct refresh={refresh}/>
+        
      <hr/>
-     <ShowAllProduct/>
+     <ShowAllProduct refrechState={refrechState} />
     </div>
   )
 }

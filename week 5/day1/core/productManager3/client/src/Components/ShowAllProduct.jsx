@@ -3,9 +3,10 @@ import { Link } from 'react-router-dom'
 import axios from 'axios'
 
 
-const ShowAllProduct = () => {
+const ShowAllProduct = (props) => {
 
     const [productList,setProductList] = useState([])
+    const {refrechState} = props
     
 
     useEffect(()=> {
@@ -15,7 +16,7 @@ const ShowAllProduct = () => {
             setProductList(res.data.allProducts)
         })
         .catch((err) => { console.log(err) })
-    }, [])
+    }, [refrechState])
     
     const deleteProduct = (id) =>  {
         axios.delete(`http://localhost:5000/api/products/${id}`)

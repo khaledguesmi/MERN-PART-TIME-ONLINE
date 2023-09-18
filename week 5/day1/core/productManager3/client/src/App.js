@@ -1,5 +1,6 @@
 
 import './App.css';
+import CreateProduct from './Components/CreateProduct';
 import EditProduct from './Components/EditProduct';
 import HomePage from './Components/HomePage';
 
@@ -14,6 +15,7 @@ function App() {
 
      <Routes>
         <Route path="/" element={ <HomePage/> } />
+        <Route path="/create" element={ <CreateProduct/> } />
         <Route path="api/products/:id" element={ <ShowOneProduct/> } />
         <Route path="api/products/edit/:id" element={ <EditProduct/> } />
         <Route path="*" element={ <h1>NOT Found</h1> } />

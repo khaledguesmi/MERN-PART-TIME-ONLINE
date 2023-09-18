@@ -11,7 +11,8 @@ const mongoose = require("mongoose")
 const productSchema = new mongoose.Schema({
     title: {
         type: String,
-        required: [true, "the product title is required"]
+        required: [true, "the product title is required"],
+        minlength : [3, "the product title is Min 3 Chart"]
     },
     price: {
         type: Number,
@@ -19,7 +20,9 @@ const productSchema = new mongoose.Schema({
     },
     description: {
         type: String,
-        required: [true, "the description is required"]
+        required: [true, "the description is required"],
+        minlength : [8, "the product description is Min 8 Chart"]
+
     }
 }, { timestamps: true });
 

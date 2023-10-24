@@ -1,0 +1,84 @@
+* {
+  margin: 0 auto;
+}
+.App {
+  text-align: center;
+  /* background-image: "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwallpapersafari.com%2Fw%2F0Wonwb&psig=AOvVaw0K_UTut6RNeeAUAV8rexpl&ust=1696017491735000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCKD5vNqLzoEDFQAAAAAdAAAAABAE"; */
+}
+* {
+  /* background-image: url("./Assets/bg.jpg"); */
+  background-size: cover;
+}
+.labelDecor {
+  background-color: #f0f0f0;
+  border: 2px solid rgb(231 231 231);
+  border-radius: 5px 5px 0px 0px;
+  width: 100%;
+  min-height: 36px;
+  padding-top: 4px;
+  font-family: monospace;
+  border-top-color: darkgray;
+}
+.loginClass {
+  max-width: 500px;
+  border: 6px solid rgb(231 231 231);
+  border-radius: 10px;
+  border-top-color: rgb(255 193 7);
+  border-bottom-color: #5d486f;
+  padding: 25px;
+  box-shadow: 2px 2px 2px 1px #c3c3c394;
+}
+.principal {
+  max-width: 70%;
+  margin-top: 5%;
+  background-color: #ebebeb;
+  border-radius: 10px;
+  box-shadow: 2px 1px rgb(78, 76, 76);
+  padding: 1%
+  
+}
+.head {
+  align-items: center;
+  display: flex;
+  margin-left: 11%;
+  background-color: #ebebeb;
+}
+.head h1,
+span {
+  background-color: #ebebeb;
+}
+.container table thead tr th h3 {
+  color: black;
+  font-weight: "bold";
+  font-Family: "sans-serif";
+}
+.bID p {
+  color: "black";
+  font-weight: "bold";
+  font-Family: "sans-serif";
+}
+#card {
+  background-color: rgb(145, 162, 172);
+  max-width: 90%;
+  margin-top: 5%;
+  border-radius: 10px;
+  box-shadow: 2px 1px rgb(78, 76, 76);
+  padding: 1%
+}
+.header-app {
+  height: "100px";
+  color: "#ffffff";
+  padding-top: 20px;
+  background-color: "#103f6e";
+}
+.tab{
+  color: #ebebeb;
+}
+#h1{
+  background-color: rgb(145, 162, 172);
+  max-width: 90%;
+  margin-top: 5%;
+  border-radius: 10px;
+  box-shadow: 2px 1px rgb(78, 76, 76);
+  padding: 1%
+}
